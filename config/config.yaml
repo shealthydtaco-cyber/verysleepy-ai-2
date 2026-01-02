@@ -1,0 +1,27 @@
+system:
+  log_level: INFO
+
+retry:
+  enabled: true
+  max_attempts: 1
+
+nsfw:
+  enabled: true
+  strictness: standard   # standard | strict | relaxed
+
+memory:
+  enabled: true
+  write_enabled: true
+
+web:
+  enabled: true
+  max_sources: 5
+  timeout_seconds: 10
+
+voice:
+  enabled: true
+  engine: piper
+  stt_model: small  # tiny | base | small | medium | large
+  stt_device: cpu   # cpu | cuda
+actions:
+  enabled: true    # Set to true to enable local actions (open_app, open_file, open_url)
